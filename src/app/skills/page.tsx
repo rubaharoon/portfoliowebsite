@@ -11,7 +11,7 @@ export default function Skills() {
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 className="sm:text-4xl text-2xl font-medium title-font mb-2 text-yellow-600">
-              Unlocking My Skill Set's Hidden Talents!
+              Unlocking My Skill Sets Hidden Talents!
             </h1>
             <div className="h-1 w-20 rounded"></div>
           </div>
@@ -55,8 +55,6 @@ export default function Skills() {
                 <SiTypescript className="text-blue-900 text-6xl" aria-label="TypeScript icon" />
                 <span className="mt-2 text-lg text-black">TS</span>
               </div>
-
-             
             </div>
           </section>
         </div>
@@ -73,11 +71,11 @@ export default function Skills() {
             <FaGithub className="text-black text-6xl" aria-label="GitHub icon" />
             <span className="mt-2 text-lg text-black">GitHub</span>
           </div>
-          <div className="flex flex-col items-center bg-white border-2 border-yellow-500 p-4 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110 focus:scale-110">
-                <SiNextdotjs className="text-black text-6xl" aria-label="Next.js icon" />
-                <span className="mt-2 text-lg text-black">Next.js</span>
-              </div>
 
+          <div className="flex flex-col items-center bg-white border-2 border-yellow-500 p-4 rounded transition-transform duration-300 ease-in-out transform hover:scale-110 active:scale-110 focus:scale-110">
+            <SiNextdotjs className="text-black text-6xl" aria-label="Next.js icon" />
+            <span className="mt-2 text-lg text-black">Next.js</span>
+          </div>
 
           {/* Typewriter Effect for Tools */}
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">

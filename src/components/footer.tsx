@@ -18,7 +18,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <p className="text-sm text-gray-500 mt-4 sm:mt-0">
-          Copyright &copy; 2024 All Rights Reserved — 
+          Copyright &copy; 2024 All Rights Reserved &mdash; 
           <a
             href="https://github.com/rubaharoon"
             className="text-gray-600 hover:text-indigo-500 ml-1"
@@ -107,5 +107,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-                
