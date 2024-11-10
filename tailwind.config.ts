@@ -8,10 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      linearGradientColors: {
+        "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
+      }
     },
   },
   plugins: [],

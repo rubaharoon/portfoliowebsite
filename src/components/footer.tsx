@@ -1,108 +1,56 @@
-import React from "react";
+import { FaFacebook, FaDiscord, FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-600 body-font">
-      <div className="container mx-auto flex flex-col sm:flex-row items-center justify-between px-5 py-8">
-        {/* Logo Section */}
-        <a className="flex title-font font-medium items-center text-white">
+    <footer className="bg-black text-gray-300 py-8 px-4">
+      {/* Top Section: Profile and Navigation */}
+      <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 items-start">
+        
+        {/* Profile Section */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <img
-            src="https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg"
-            width={50}
-            height={50}
-            alt="logo"
-            className="w-20 h-20 text-white p-2 rounded-full"
+            src="../images/logo.png" 
+            alt="Ruba Haroon"
+            className="w-16 h-16 rounded-full mb-2"
           />
-          <span className="ml-3 text-xl">Ruba Haroon</span>
-        </a>
-
-        {/* Copyright Section */}
-        <p className="text-sm text-gray-500 mt-4 sm:mt-0">
-          Copyright &copy; 2024 All Rights Reserved &mdash; 
-          <a
-            href="https://github.com/rubaharoon"
-            className="text-gray-600 hover:text-indigo-500 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            @Ruba Haroon
-          </a>
-        </p>
-
-        {/* Social Media Icons */}
-        <div className="flex mt-4 sm:mt-0">
-          <a
-            href="https://facebook.com"
-            className="text-blue-900 hover:text-blue-700 ml-3"
-            aria-label="Facebook"
-          >
-            <svg
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a
-            href="https://twitter.com"
-            className="text-blue-500 hover:text-blue-400 ml-3"
-            aria-label="Twitter"
-          >
-            <svg
-              fill="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a
-            href="https://instagram.com"
-            className="text-pink-700 hover:text-pink-500 ml-3"
-            aria-label="Instagram"
-          >
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a
-            href="https://linkedin.com"
-            className="text-blue-800 hover:text-blue-600 ml-3"
-            aria-label="LinkedIn"
-          >
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="0"
-              className="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
+          <h2 className="text-lg font-semibold">Ruba Haroon</h2>
+          <p className="text-sm mt-2">
+            An amazing web developer portfolio website to showcase their work and skills.
+          </p>
         </div>
+
+        {/* Navigation Links Section (Align to the right) */}
+        <div className="flex justify-end md:justify-start space-x-6 lg:space-x-0 lg:flex-col lg:space-y-2 text-center">
+          <a href="/" className="hover:text-white">Home</a>
+          <a href="/about" className="hover:text-white">About Me</a>
+          <a href="/skills" className="hover:text-white">Skills</a>
+          <a href="/blogs" className="hover:text-white">Blogs</a>
+          <a href="#contact" className="hover:text-white">Contact</a>
+        </div>
+      </div>
+
+      {/* Bottom Section: Social Media Icons */}
+      <div className="flex justify-center space-x-6 mt-8">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-white">
+          <FaFacebook size={24} />
+        </a>
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-white">
+          <FaDiscord size={24} />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-white">
+          <FaLinkedin size={24} />
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-white">
+          <FaGithub size={24} />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-purple-400 hover:text-white">
+          <FaInstagram size={24} />
+        </a>
+      </div>
+
+      {/* Copyright Text */}
+      <div className="text-center text-sm text-gray-500 mt-4">
+        © Ruba Haroon — 2024
       </div>
     </footer>
   );
